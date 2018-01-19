@@ -11,7 +11,7 @@ Started from [POSIX thread (pthread) libraries](http://www.yolinux.com/TUTORIALS
 Thead functionCount increment counter and wait for 5 secs using `pthread_cond_timedwait`. 
 On `SIGINT` capture, the handler call `pthread_cond_signal` and the `pthread_cond_timedwait` in thead exit before timeout.
 
-```
+```c
 
 /**
  * param timeInMs - timeout in msec. 
