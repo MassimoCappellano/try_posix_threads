@@ -1,12 +1,12 @@
 # TRY POSIX THREADS
 
-[POSIX thread (pthread) libraries](http://www.yolinux.com/TUTORIALS/LinuxTutorialPosixThreads.html)  
+Started from [POSIX thread (pthread) libraries](http://www.yolinux.com/TUTORIALS/LinuxTutorialPosixThreads.html)  
 
 [pthread_cond_timedwait manpage](http://man.yolinux.com/cgi-bin/man2html?cgi_command=pthread_cond_timedwait)
 
 ## USE of `pthread_cond_timedwait`
 
-`cond_timewait.c` some proof with `pthread_cond_signal` and `pthread_cond_timedwait`.
+[`cond_timedwait.c`](cond_timedwait.c) some proof with `pthread_cond_signal` and `pthread_cond_timedwait`.
 
 Thead functionCount increment counter and wait for 5 secs using `pthread_cond_timedwait`. 
 On `SIGINT` capture, the handler call `pthread_cond_signal` and the `pthread_cond_timedwait` in thead exit before timeout.
